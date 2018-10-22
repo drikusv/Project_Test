@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{3B732CEB-4D7B-67D1-13DB-4FA6937EDE1D}",
+	"EngineAssociation": "4.20",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "Project_Pluto",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [

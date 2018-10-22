@@ -140,6 +140,5 @@ void AProject_PlutoCharacter::UpdateCharacter()
 
 void AProject_PlutoCharacter::OnJumped_Implementation()
 {
-	UE_LOG(LogTemp, Warning, TEXT("JUMPING!"));
 	GetSprite()->SetFlipbook((UPaperFlipbook*)JumpAnimation);
 }
