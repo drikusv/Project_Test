@@ -135,21 +135,10 @@ void AProject_PlutoCharacter::UpdateCharacter()
 	const FVector PlayerVelocity = GetVelocity();	
 	float TravelDirection = PlayerVelocity.X;
 	// Set the rotation so that the character faces his direction of travel.
-	if (Controller != nullptr)
-	{
-		if (TravelDirection < 0.0f)
-		{
-			Controller->SetControlRotation(FRotator(0.0, 180.0f, 0.0f));
-		}
-		else if (TravelDirection > 0.0f)
-		{
-			Controller->SetControlRotation(FRotator(0.0f, 0.0f, 0.0f));
-		}
-	}
+	
 }
 
 void AProject_PlutoCharacter::OnJumped_Implementation()
 {
-	UE_LOG(LogTemp, Warning, TEXT("JUMPING!"));
 	GetSprite()->SetFlipbook((UPaperFlipbook*)JumpAnimation);
 }
